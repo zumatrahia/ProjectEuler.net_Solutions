@@ -8,9 +8,7 @@ fun main(){
     var result = 0
     var list = mutableListOf<Int>()
     for (i in 0..number){
-        if (i % 3 == 0)
-            list.add(i)
-        if (i % 5 == 0)
+        if (i % 3 == 0 || i % 5 == 0)
             list.add(i)
     }
     list = list.toSet().toMutableList()
